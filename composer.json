@@ -1,0 +1,29 @@
+{
+    "name": "arindam/shopify-apis",
+    "description": "A laravel package for all shopify apis",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Arindam Roy",
+            "email": "arindam.roy.developer@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Arindam\\ShopifyApis\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Arindam\\ShopifyApis\\ShopifyApiServiceProvider"
+            ],
+            "aliases": {
+                "ShopifyApis": "Arindam\\ShopifyApis\\Shopify\\ShopifyClassFacade"
+            }
+        }
+    }
+}
